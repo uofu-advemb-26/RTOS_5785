@@ -1,10 +1,8 @@
-# Renode setup
-The Raspberry Pico needs configuration files for Renode to work properly.
+# Advanced Embedded Lab 0: Blink an LED!
+This repo contains firmware for a Raspberry Pi Pico W that blinks its onboard LED.
 
-* On MacOS, the installation location is `/Applications/Renode.app/Contents/MacOs`
-* On Linux, the location for Debian, Fedora, and Arch is `/opt/renode`
-* On Windows, the location is `C://Program Files/Renode`
+This was meant to be an exercise in environment setup, so this is accomplished via an RTOS thread, and has associated tests in a github workflow.
 
-To add the Pico configuration files:
-1. Copy `rp2040_spinlock.py` and `rp2040_divider.py` to the `scripts/pydev` directory of your Renode installation.
-1. Copy `rpi_pico_rp2040_w.repl` to the `platforms/cpus` directory.
+Here's the status of those tests on our MAIN branch!
+
+![Test Status](https://github.com/uofu-advemb-26/RTOS_5785/actions/workflows/main.yml/badge.svg)
