@@ -56,4 +56,4 @@ jobs:
       - name: Test
         working-directory: ${{github.workspace}}
         shell: bash
-        run: python3 /usr/local/share/pico/unity_checker.py
+        run: ls /usr/local/share/pico/ | xargs echo && python3 /usr/local/share/pico/unity_checker.py
